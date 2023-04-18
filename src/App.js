@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CommentList from "./components/CommentList/CommentList";
+import "../src/components/CommentList/CommentList.scss"
 
 function App() {
+  // const [ comments, setComments ] = useState(JSON.parse(localStorage.getItem("comments")) || [data]);
+  
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CommentList />
     </div>
   );
 }

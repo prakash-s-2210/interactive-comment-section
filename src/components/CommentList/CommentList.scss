@@ -1,0 +1,110 @@
+@import "../../common/colors.scss";
+// .main-wrapper{
+    // display: flex;
+    // position: relative;
+// }
+.model-container{
+
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    top: 0px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(239, 57%, 85%, 0.5);
+    .model-wrapper{
+        z-index: 200;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        width: 280px;
+    }
+    .delete-comment{
+        padding-bottom: 12px;
+        font-weight: 500;
+        font-size: 18px;
+        color: rgb(29, 29, 29);
+    }
+    .delete-confirmation-content{
+        display: inline-block;
+        font-size: 14px;
+        color: rgb(88, 88, 88);
+        margin-bottom: 20px;
+    }
+    .model-btn-wrapper{
+        display: flex;
+        .cancel-btn{
+            width: 50%;
+            padding: 8px 0px;
+            border-radius: 4px;
+            border: none;
+            background-color: $secondary-grayish-blue;
+            margin-right: 10px;
+            color: $secondary-white;
+            font-weight: 500;
+        }
+        .cancel-btn:hover{
+            cursor: pointer;
+            background-color: $primary-light-grayish-blue;
+        }
+        .delete-btn{
+            width: 50%;
+            padding: 8px 0px;
+            border-radius: 4px;
+            border: none;
+            background-color: $primary-soft-red;
+            color: $secondary-white;
+            font-weight: 500;
+        }
+        .delete-btn:hover{
+            cursor: pointer;
+            background-color: $primary-pale-red;
+        }
+    }
+}
+
+
+.comment-container{
+    padding: 5% 20%;
+}
+.reply-container{
+    display: flex;
+}
+.reply-wrapper{
+    width: 100%;
+}
+.reply-alignment{
+    margin-left: 28px;
+    border: 0.5px solid $secondary-light-gray ;
+    margin-right: 33px;
+    margin-top: 15px;
+}
+@media only screen and (max-width: 900px) {
+    .comment-container {
+      padding: 5% 10%;
+    }
+  }
+@media only screen and (max-width: 600px)  {
+    .comment-container{
+        padding: 5% 2%;
+    }
+}
+@media only screen and (max-width: 570px)  {
+    .reply-alignment{
+        margin-left: 15px;
+        border: 0.5px solid $secondary-light-gray ;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+}
+@media only screen and (max-width: 376px)  {
+    .reply-alignment{
+        margin-left: 0px;
+        border: 0.5px solid $secondary-light-gray ;
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+}

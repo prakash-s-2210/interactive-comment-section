@@ -1,0 +1,359 @@
+@import "../../common/colors.scss";
+.flex-container{
+    box-sizing: border-box;
+    display: flex;
+    padding: 20px 15px;
+    background-color: $secondary-white;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.comment-score-flex{
+
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background-color: $secondary-very-light-gray;
+    height: 90px;
+    .plus-icon-disabled{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: auto;
+        color: $primary-light-grayish-blue;
+        font-size: 12px;
+        font-weight: bold;
+        height: 30px;
+        width: 100%;
+    }
+    .plus-icon-enabled{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: $primary-moderate-blue;
+        font-size: 12px;
+        font-weight: bold;
+        height: 30px;
+        width: 100%;
+    }
+    .score-active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        font-weight: 500;
+        color: $primary-moderate-blue;
+    }
+    .score-inActive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        font-weight: 500;
+        color: $primary-light-grayish-blue;
+    }
+    .minus-icon-disabled{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: auto;
+        color: $primary-light-grayish-blue;
+        font-size: 12px;
+        font-weight: bold;
+        height: 30px;
+        width: 100%;
+    }
+    .minus-icon-enabled{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: $primary-moderate-blue;
+        font-size: 12px;
+        font-weight: bold;
+        height: 30px;
+        width: 100%;
+    }
+}
+.comment-score-flex:hover{
+    color: $primary-moderate-blue;
+    background-color: $secondary-light-gray;
+}
+.comment-detail-flex{
+    margin-left: 20px;
+    width: 100%;
+    textarea{
+        box-sizing: border-box;
+        width: 100%;
+        resize: none;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 4px;
+        border-color: $secondary-light-gray;
+        color: rgb(41, 41, 41);  
+        font-family:"Rubik", sans-serif ;
+    } 
+    textarea:focus{
+        outline: none;
+        border-color: $primary-moderate-blue;
+    }
+    textarea::-webkit-scrollbar{
+        width: 0.5vw;
+    }
+    textarea::-webkit-scrollbar-thumb{
+        background-color: rgb(84, 87, 182,0.5);
+        border-radius: 3px;
+        height: 25px;
+    } 
+    textarea:hover{
+        border-color: $primary-moderate-blue;
+    }
+    
+    .content{
+        padding-right: 2rem;
+        color: $secondary-grayish-blue;
+        font-size: 14px;
+    }
+    .update-btn-flex{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15px;
+    }
+    .update-btn{
+        height: 33px;
+        font-weight: bold;
+        color: $secondary-white;
+        padding: 0px 15px;
+        border: none;
+        border-radius: 4px;
+        background-color: $primary-moderate-blue;
+    }
+    .update-btn:hover{
+        cursor: pointer;
+        background-color: $primary-light-grayish-blue;
+    }
+}
+.comment-header-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.user-information {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    .user-image{
+        width: 30px;
+        padding-right: 10px;
+    }
+    .user-name{
+        font-weight: 500;
+        padding-right: 10px;
+    }
+    .user-account{
+        font-size: 13px;
+        margin-right: 10px;
+        padding: 1px 4px;
+        background-color: $primary-moderate-blue;
+        border-radius: 4px;
+        font-weight: 500;
+        color: $secondary-white;
+    }
+    .comment-created{
+        color: $secondary-grayish-blue;
+    }
+}
+.reply-wrapper-flex{
+    display: flex;
+    align-items: center;
+    color: $primary-moderate-blue;
+
+    .reply-icon{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .reply-text{
+        padding-left: 10px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+.update-content-container{
+    display: flex;
+    align-items: center;
+    .delete-wrapper-flex{
+        display: flex;
+        align-items: center;
+        color: $primary-soft-red;
+        margin-right: 15px;
+        .delete-icon{
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .delete-text{
+            padding-left: 10px;
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+    .edit-wrapper-flex{
+        display: flex;
+        align-items: center;
+        color: $primary-moderate-blue;
+    
+        .edit-icon{
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .edit-text{
+            padding-left: 10px;
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+    
+    
+}
+.reply-wrapper-flex:hover{
+    cursor: pointer;
+    color: $primary-light-grayish-blue;
+}
+.edit-wrapper-flex:hover{
+    cursor: pointer;
+    color: $primary-light-grayish-blue;
+}
+.delete-wrapper-flex:hover{
+    cursor: pointer;
+    color: $primary-pale-red;
+}
+
+
+// media queries 
+@media only screen and (max-width: 570px) {
+    .flex-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 7px;
+    }
+    .flex-item:nth-child(1) {
+        order: 2
+    }
+    .comment-detail-flex{
+        margin-left: 15px;
+        textarea{
+            width: 93%;
+        }
+        .update-btn-flex{
+            margin-right: 20px;
+        }
+        .update-btn{
+            font-size: 12px;
+            padding: 0px 10px;
+            height: 28px;
+        }
+    }
+    .comment-score-flex{
+        display: flex;
+        margin-left: 13px;
+        margin-top: 20px;
+        width: 90px;
+        height: 25px;
+        padding: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .update-content-container{
+        position: absolute;
+        bottom: 25px;
+        right: 30px;
+    }
+    .reply-wrapper-flex{
+        position: absolute;
+        bottom: 25px;
+        right: 15px;
+    }
+    .user-information{
+        .user-name{
+        padding-right: 15px;
+    }}
+    
+}
+@media only screen and (max-width: 450px){
+    .comment-detail-flex{
+        .update-btn{
+            font-size: 11px;
+            padding: 0px 6px;
+        }
+    }
+}
+
+@media only screen and (max-width:375px ){
+    .comment-score-flex{
+        width: 80px;
+        height: 25px;
+        padding: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+        .plus-icon-enabled{
+            font-size: 12px;
+        }
+        .plus-icon-disabled{
+            font-size: 12px;
+        }
+        .minus-icon-enabled{
+            font-size: 12px;
+        }
+        .minus-icon-disabled{
+            font-size: 12px;
+        }
+        .score-active{
+            font-size: 13px;
+        }
+        .score-inActive{
+            font-size: 13px;
+        }
+    }
+    .update-content-container{
+        .delete-wrapper-flex{
+            .delete-icon{
+                font-size: 12px;
+            }
+            .delete-text{
+                font-size: 13px;
+            }
+        }
+        .edit-wrapper-flex{
+            .edit-icon{
+                font-size: 12px;
+            }
+            .edit-text{
+                font-size: 13px;
+            }
+        } 
+    }
+    .reply-wrapper-flex{
+        .reply-icon{
+            font-size: 12px;
+        }
+        .reply-text{
+            font-size: 13px;
+        }
+    }
+    .user-information{
+        .user-name{
+            font-size: 13px;
+        }
+        .comment-created{
+            font-size: 13px;
+        }
+    }
+    .comment-detail-flex{
+        .content{
+            font-size: 12px;
+        }
+    }
+}
