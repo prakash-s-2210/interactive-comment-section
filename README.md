@@ -9,7 +9,7 @@ Additionally using localStorage to save the current state in the browser, and dy
 ### The challenge
 
 Users should be able to:
-
+ 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Create, Read, Update, and Delete comments and replies
